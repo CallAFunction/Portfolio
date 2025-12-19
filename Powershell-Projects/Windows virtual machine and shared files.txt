@@ -1,0 +1,4 @@
+In order to test this script, I had to make a Windows virtual machine using QEMA.
+However, I also wanted to be able to access this script from my host linux machine.
+I did this by installing Samba, an application that allows one to share a folder
+over a network.
