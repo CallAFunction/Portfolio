@@ -33,7 +33,7 @@ function ask-for-properties {
 
 # Prompt for path
 $path_reference = Get-Content "$PSScriptRoot\path.txt"
-$path = Read-Host "Enter folder path for CSV (or press Enter to use saved path ($path_reference))"
+$path = Read-Host "Enter folder path for CSV (or press Enter to use saved path ($path_reference)) the file will be called 'all users'."
 
 # Validate path
 if ((Test-PathSafe $path) -and (Test-PathSafe $path_reference)) {
@@ -61,3 +61,4 @@ $all_users| Select-Object $exported_properties | Export-Csv -Path $csvPath -NoTy
 #elseif ($choice -eq 2) {
 
 #}
+
