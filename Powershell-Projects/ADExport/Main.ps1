@@ -53,10 +53,11 @@ $all_properties = (get-aduser -filter * -properties * -ResultSetSize 1).psobject
 $all_properties += "Finished"
 # Export
 
-$users = Get-ADUser -filter * -properties *
+$all_users = Get-ADUser -filter * -properties *
 $selected_properties = ask-for-properties
 $exported_properties = @("Name") + $selected_properties
-$all_users| Select-Object $exported_properties | Export-Csv -Path $path_reference/all_users.csv -NoTypeInformation #returns error, but there is no issue this is just due to duplicate of "name" property.
+$csvPath = Join-Path $path_reference "all_users.csv"
+$all_users | Select-Object $exported_properties | Export-Csv -Path $csvPath -NoTypeInformation
 
 #elseif ($choice -eq 2) {
 
