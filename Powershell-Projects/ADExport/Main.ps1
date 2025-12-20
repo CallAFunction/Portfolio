@@ -56,9 +56,10 @@ $all_properties += "Finished"
 $users = Get-ADUser -filter * -properties *
 $selected_properties = ask-for-properties
 $exported_properties = @("Name") + $selected_properties
-$all_users| Select-Object $exported_properties | Export-Csv -Path $csvPath -NoTypeInformation #returns error, but there is no issue this is just due to duplicate of "name" property.
+$all_users| Select-Object $exported_properties | Export-Csv -Path $path_reference/all_users.csv -NoTypeInformation #returns error, but there is no issue this is just due to duplicate of "name" property.
 
 #elseif ($choice -eq 2) {
 
 #}
+
 
