@@ -1,3 +1,0 @@
-DROP TABLE IF EXISTS patient;
-DROP TABLE IF EXISTS location;
-DROP TABLE IF EXISTS professional;

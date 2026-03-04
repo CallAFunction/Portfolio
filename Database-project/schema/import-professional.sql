@@ -1,1 +1,0 @@
-.import professional.csv professional
