@@ -1,0 +1,3 @@
+Another problem I ran into, was due to Microsoft's policy on running things from a network
+drive, I had to copy these folders to the desktop to run it. This is why you may notice the
+commits here are not structured the same as usual.

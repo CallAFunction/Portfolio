@@ -1,0 +1,10 @@
+used modules:
+socket
+Argparse
+concurrent.futures
+ipaddress
+scapy
+python-nmap
+requests
+beautifulsoup4
+colorama
