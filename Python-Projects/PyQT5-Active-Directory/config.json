@@ -1,7 +1,0 @@
-{
-  "ad_server": "your.domain.controller",
-  "username": "DOMAIN\\user",
-  "password": "password",
-  "base_dn": "dc=example,dc=com"
-}
-
